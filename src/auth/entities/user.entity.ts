@@ -1,4 +1,5 @@
-import { Column, Entity, PrimaryGeneratedColumn, BeforeInsert, BeforeUpdate } from 'typeorm';
+import { Task } from 'src/tasks/entities/task.entity';
+import { Column, Entity, PrimaryGeneratedColumn, BeforeInsert, BeforeUpdate, OneToMany } from 'typeorm';
 
 
 @Entity({ name: 'users' })
@@ -21,6 +22,9 @@ export class User {
 
     @Column({ type: 'text', array: true, default: [] })
     roles: string[];
+
+    @OneToMany(type => Task, task => task.user)
+    tasks: Task[];
 
     @BeforeInsert()
     normalizeInsertEmail() {
