@@ -2,7 +2,7 @@
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
 
-# Starter API template using Nest.js with TypeORM y Postgresql
+# Tasks API using Nest.js with TypeORM y Postgresql
 
 1. Clone repo
 
@@ -10,7 +10,7 @@
 
 3. Clone `.env.example` file content into a `.env` and then add values to the environment variables
 
-4. Run database container: `docker-compose up -d`
+4. Run database container: `docker-compose up -d`, if you don't have Docker, must create a postgres database and provide credential en .env file before start proyect
 
 5. Run app `yarn start:dev`
 
