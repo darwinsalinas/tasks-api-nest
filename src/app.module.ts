@@ -5,6 +5,7 @@ import { CommonModule } from './common/common.module';
 import { SeedModule } from './seed/seed.module';
 import { AuthModule } from './auth/auth.module';
 import { AppController } from './app.controller';
+import { TasksModule } from './tasks/tasks.module';
 
 @Module({
   imports: [
@@ -26,6 +27,8 @@ import { AppController } from './app.controller';
     SeedModule,
 
     AuthModule,
+
+    TasksModule,
   ],
   controllers: [AppController],
   providers: [],
