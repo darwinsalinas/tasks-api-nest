@@ -16,8 +16,8 @@ async function bootstrap() {
   ));
 
   const config = new DocumentBuilder()
-    .setTitle('Awesome API with Nest.js')
-    .setDescription('Awesome API with Nest.js with TypeORM, and PostgreSQL')
+    .setTitle('Tasks API with Nest.js')
+    .setDescription('Tasks API with Nest.js with TypeORM, and PostgreSQL')
     .setVersion('1.0')
     .build();
   const document = SwaggerModule.createDocument(app, config);
