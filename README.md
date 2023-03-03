@@ -17,3 +17,5 @@
 6. Seed Database `http://{{host}}:{{port}}/seed`
 
 7. See docs `http://{{host}}:{{port}}/docs`
+
+8. You can find the Frontend app here: https://github.com/darwinsalinas/tasks-frontend
