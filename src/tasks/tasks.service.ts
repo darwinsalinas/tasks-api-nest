@@ -36,6 +36,9 @@ export class TasksService {
     return this.tasksRepository.find({
       take: limit,
       skip: offset,
+      order: {
+        id: 'ASC'
+      }
     });
   }
 
@@ -72,6 +75,7 @@ export class TasksService {
     await this.findOne(uuid);
 
     await this.tasksRepository.delete(uuid);
+
     return;
   }
 }

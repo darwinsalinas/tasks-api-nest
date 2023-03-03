@@ -15,3 +15,5 @@
 5. Run app `yarn start:dev`
 
 6. Seed Database `http://{{host}}:{{port}}/seed`
+
+7. See docs `http://{{host}}:{{port}}/docs`
